@@ -2,6 +2,7 @@ $bgColor: #e5e5e5;
 $white: #FFFFFF;
 $gray: #2B2B2B;
 $yellow:  #FFB400;
+$textGray: #767676;
 
 body{
   background-color: $bgColor;
@@ -33,4 +34,8 @@ header {
 }
 .imgHeader{
   float: right;
+}
+h6{
+  color: $textGray;
+  font-size: 1vw;
 }

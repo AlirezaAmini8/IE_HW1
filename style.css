@@ -33,4 +33,9 @@ header {
 
 .imgHeader {
   float: right;
+}
+
+h6 {
+  color: #767676;
+  font-size: 1vw;
 }/*# sourceMappingURL=style.css.map */
