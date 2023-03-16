@@ -38,4 +38,13 @@ header {
 h6 {
   color: #767676;
   font-size: 1vw;
+}
+
+#yellowButton {
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 0.8vw;
+  display: flex;
+  background-color: #FFB400;
+  border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

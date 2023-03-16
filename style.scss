@@ -39,3 +39,11 @@ h6{
   color: $textGray;
   font-size: 1vw;
 }
+#yellowButton{
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 0.8vw;
+  display: flex;
+  background-color: $yellow;
+  border: 1px solid white;
+}
