@@ -1,8 +1,29 @@
 $bgColor: #e5e5e5;
-
+$white: #FFFFFF;
+$gray: #2B2B2B;
+$yellow:  #FFB400;
 
 body{
   background-color: $bgColor;
   font-size: 48px;
   font-family: Inter;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  content: "";
+  clear: both;
+}
+header {
+  background-color: $white;
+  width: 70%;
+  padding: 1.5%;
+  height: 10%;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 2.5vw;
+  color: $gray;
+}
+#yellowSpan{
+  color: $yellow;
 }
