@@ -47,4 +47,10 @@ h6 {
   display: flex;
   background-color: #FFB400;
   border: 1px solid white;
+}
+
+article {
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 90vw;
 }/*# sourceMappingURL=style.css.map */
