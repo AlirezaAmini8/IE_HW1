@@ -3,6 +3,8 @@ $white: #FFFFFF;
 $gray: #2B2B2B;
 $yellow:  #FFB400;
 $textGray: #767676;
+$textGreen: #7EB942;
+$LineColor: #F0F0F6;
 
 body{
   background-color: $bgColor;
@@ -79,7 +81,7 @@ article {
 }
 .Lines{
   width: 70%;
-  border-color: #F0F0F6;
+  border-color: $LineColor;
 }
 .Tables{
   text-align: start;
@@ -88,14 +90,14 @@ article {
   font-size: 2vw;
 }
 .thBGcolored{
-  background-color: #FFB400;
+  background-color: $yellow;
 }
 .EndAligntd{
   text-align: end;
 }
 tr{
   font-size: 1.5vw;
-  color: #2B2B2B;
+  color: $gray;
 }
 th{
   display: inline;
@@ -105,5 +107,12 @@ td{
   text-align: left;
 }
 #greenText{
-  color: #7EB942;
+  color: $textGreen;
+}
+.SndTabletd{
+  padding-left: 40%;
+}
+caption{
+  text-align: justify;
+  padding-left: 20%;
 }
