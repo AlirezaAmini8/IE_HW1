@@ -88,4 +88,37 @@ article {
 .Lines {
   width: 70%;
   border-color: #F0F0F6;
+}
+
+.Tables {
+  text-align: start;
+  padding-left: 15%;
+  width: 80%;
+  font-size: 2vw;
+}
+
+.thBGcolored {
+  background-color: #FFB400;
+}
+
+.EndAligntd {
+  text-align: end;
+}
+
+tr {
+  font-size: 1.5vw;
+  color: #2B2B2B;
+}
+
+th {
+  display: inline;
+  text-align: left;
+}
+
+td {
+  text-align: left;
+}
+
+#greenText {
+  color: #7EB942;
 }/*# sourceMappingURL=style.css.map */
