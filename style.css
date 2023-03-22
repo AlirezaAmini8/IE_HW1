@@ -74,4 +74,18 @@ article {
   height: 2vw;
   transform: translate(840%, 20%);
   display: flex;
+}
+
+#ItemListofIDs {
+  display: list-item;
+}
+
+.imgIDs {
+  width: 2vw;
+  height: 2vw;
+}
+
+.Lines {
+  width: 70%;
+  border-color: #F0F0F6;
 }/*# sourceMappingURL=style.css.map */
