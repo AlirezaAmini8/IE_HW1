@@ -13,10 +13,10 @@ section {
 
 header {
   background-color: #FFFFFF;
-  width: 70%;
-  padding: 1.5%;
-  height: 10%;
-  margin-left: 1%;
+  width: 63vw;
+  height: 27vw;
+  padding: 3%;
+  margin-left: 2%;
   text-align: left;
   font-size: 2.5vw;
   color: #2B2B2B;
@@ -149,4 +149,9 @@ caption {
   height: 1vw;
   padding-left: 10%;
   margin-top: 2%;
+}
+
+#ColumnDisplay {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

@@ -19,10 +19,10 @@ section {
 }
 header {
   background-color: $white;
-  width: 70%;
-  padding: 1.5%;
-  height: 10%;
-  margin-left: 1%;
+  width: 63vw;
+  height: 27vw;
+  padding: 3%;
+  margin-left: 2%;
   text-align: left;
   font-size: 2.5vw;
   color: $gray;
@@ -122,7 +122,7 @@ caption{
   font-size: 1.5vw;
   padding-left: 15%;
   display: flex;
-  background-color: #FFB400;
+  background-color: $yellow;
   border: 1px solid white;
   padding-block: 2%;
   margin-bottom: 4%;
@@ -132,4 +132,8 @@ caption{
   height: 1vw;
   padding-left: 10%;
   margin-top: 2%;
+}
+#ColumnDisplay{
+  display: flex;
+  flex-direction: column;
 }
