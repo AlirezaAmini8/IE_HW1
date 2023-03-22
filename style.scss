@@ -52,3 +52,21 @@ article {
   width: 30%;
   height: 90vw;
 }
+#ProfInfo{
+  font-size: 1.4vw;
+  align-items: center;
+  text-align: center;
+}
+.imgProfile{
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  transform: translate(90%, 30%);
+}
+.imgAvailable{
+  width: 2vw;
+  height: 2vw;
+  transform: translate(840%, 20%);
+  display: flex;
+}
