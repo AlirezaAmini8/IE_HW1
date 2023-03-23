@@ -170,4 +170,13 @@ td {
   width: 33%;
   font-size: 2vw;
   padding-top: 4%;
+}
+
+.TableSpacing {
+  border-spacing: 1vw;
+}
+
+.imgIcons {
+  width: 5vw;
+  height: 5vw;
 }/*# sourceMappingURL=style.css.map */
