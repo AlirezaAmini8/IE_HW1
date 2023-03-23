@@ -137,3 +137,16 @@ td{
   display: flex;
   flex-direction: column;
 }
+.ContentCaptions{
+  font-size: 3vw;
+  text-align: center;
+}
+.Contenttr{
+  background-color: $white;
+}
+.Contenttd{
+  text-align: center;
+  width: 33%;
+  font-size: 2vw;
+  padding-top: 4%;
+}
