@@ -179,4 +179,28 @@ td {
 .imgIcons {
   width: 5vw;
   height: 5vw;
+}
+
+a:link {
+  color: #FFB400;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #7EB942;
+  background-color: transparent;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
