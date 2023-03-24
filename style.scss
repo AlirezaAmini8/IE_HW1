@@ -37,9 +37,10 @@ header {
 .imgHeader{
   float: right;
 }
-h6{
-  color: $textGray;
+h6 {
+  color: #767676;
   font-size: 1vw;
+  margin-top: 2%;
 }
 #yellowButton{
   padding: 1%;
@@ -133,9 +134,11 @@ td{
   padding-left: 10%;
   margin-top: 2%;
 }
-#ColumnDisplay{
+.ColumnDisplay{
   display: flex;
   flex-direction: column;
+  text-align: center;
+  font-size: 3vw;
 }
 .ContentCaptions{
   font-size: 3vw;

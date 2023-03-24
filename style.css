@@ -38,6 +38,7 @@ header {
 h6 {
   color: #767676;
   font-size: 1vw;
+  margin-top: 2%;
 }
 
 #yellowButton {
@@ -151,9 +152,11 @@ td {
   margin-top: 2%;
 }
 
-#ColumnDisplay {
+.ColumnDisplay {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  font-size: 3vw;
 }
 
 .ContentCaptions {
