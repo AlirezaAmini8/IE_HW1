@@ -162,6 +162,7 @@ td {
 }
 
 .ContentCaptions {
+  margin-top: 3%;
   font-size: 3vw;
   text-align: center;
 }
@@ -239,4 +240,9 @@ pre {
   font-family: Inter;
   font-size: 1vw;
   margin-top: 5%;
+}
+
+.ShapeImg {
+  width: 1vw;
+  height: 1vw;
 }/*# sourceMappingURL=style.css.map */
