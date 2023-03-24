@@ -206,4 +206,24 @@ a:active {
   color: #7EB942;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.rowDisplay {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  font-size: 1.5vw;
+  background-color: #FFFFFF;
+  margin-left: 1%;
+  border-bottom: 0.5px solid #767676;
+}
+
+.FirstSection {
+  width: 60%;
+  text-align: center;
+}
+
+.leftAlign {
+  margin-left: 10%;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
