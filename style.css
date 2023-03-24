@@ -51,9 +51,11 @@ h6 {
 }
 
 article {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
-  width: 30%;
-  height: 90vw;
+  width: 50%;
+  height: 100%;
 }
 
 #ProfInfo {
@@ -215,7 +217,7 @@ a:active {
   font-size: 1.5vw;
   background-color: #FFFFFF;
   margin-left: 1%;
-  border-bottom: 0.5px solid #767676;
+  border-bottom: 1px solid #767676;
 }
 
 .FirstSection {
@@ -226,4 +228,15 @@ a:active {
 .leftAlign {
   margin-left: 10%;
   text-align: left;
+}
+
+.ColoredBox {
+  color: #FFFFFF;
+  background-color: #FFB400;
+}
+
+pre {
+  font-family: Inter;
+  font-size: 1vw;
+  margin-top: 5%;
 }/*# sourceMappingURL=style.css.map */

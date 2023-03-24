@@ -51,9 +51,11 @@ h6 {
   border: 1px solid white;
 }
 article {
-  background-color: $white;
-  width: 30%;
-  height: 90vw;
+  display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 50%;
+    height: 100%;
 }
 #ProfInfo{
   font-size: 1.4vw;
@@ -190,7 +192,7 @@ a:active {
   font-size: 1.5vw;
   background-color: $white;
   margin-left: 1%;
-  border-bottom: 0.5px solid $textGray;
+  border-bottom: 1px solid $textGray;
 }
 .FirstSection{
   width: 60%;
@@ -199,4 +201,13 @@ a:active {
 .leftAlign{
   margin-left: 10%;
   text-align: left;
+}
+.ColoredBox{
+  color: $white;;
+  background-color: $yellow;
+}
+pre{
+  font-family: Inter;
+  font-size: 1vw;
+  margin-top: 5%;
 }
