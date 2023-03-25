@@ -1,11 +1,3 @@
-.rowDisplay, .ColumnDisplay, #yellowButtonForSideBar, .imgAvailable, .imgProfile, article, #yellowButton, section {
-  display: flex;
-}
-
-.ColoredBox, #yellowButtonForSideBar, .thBGcolored, #yellowButton {
-  background-color: #FFB400;
-}
-
 body {
   background-color: #e5e5e5;
   font-size: 48px;
@@ -13,6 +5,7 @@ body {
 }
 
 section {
+  display: flex;
   flex-direction: row;
   content: "";
   clear: both;
@@ -53,15 +46,17 @@ h6 {
   padding: 1% 1% 1% 1%;
   border-radius: 10px;
   font-size: 0.8vw;
+  display: flex;
+  background-color: #FFB400;
   border: 1px solid #FFFFFF;
 }
 
 article {
+  display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   width: 50%;
   height: 100%;
-  display: flex;
 }
 
 #ProfInfo {
@@ -73,6 +68,7 @@ article {
 .imgProfile {
   width: 10vw;
   height: 10vw;
+  display: flex;
   justify-content: center;
   transform: translate(90%, 30%);
 }
@@ -81,6 +77,7 @@ article {
   width: 2vw;
   height: 2vw;
   transform: translate(840%, 20%);
+  display: flex;
 }
 
 #ItemListofIDs {
@@ -105,6 +102,10 @@ article {
   width: 80%;
   height: 0%;
   font-size: 2vw;
+}
+
+.thBGcolored {
+  background-color: #FFB400;
 }
 
 .EndAligntd {
@@ -144,6 +145,8 @@ td {
   font-size: 1.5vw;
   margin: 0% 0% 4% 15%;
   padding: 0% 0% 0% 15%;
+  display: flex;
+  background-color: #FFB400;
   border: 1px solid #FFFFFF;
   padding-block: 2%;
 }
@@ -156,6 +159,7 @@ td {
 }
 
 .ColumnDisplay {
+  display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 3vw;
@@ -213,6 +217,7 @@ a:active {
 }
 
 .rowDisplay {
+  display: flex;
   flex-direction: row;
   padding: 3% 0% 2% 1%;
   margin: 0% 0% 0% 1%;
@@ -234,6 +239,7 @@ a:active {
 
 .ColoredBox {
   color: #FFFFFF;
+  background-color: #FFB400;
 }
 
 pre {

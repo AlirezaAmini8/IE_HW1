@@ -3,160 +3,153 @@
 
 body{
   background-color: Variables.$bgColor;
-  font-size: 48px;
-  font-family: Inter;
+  @include Mixins.font_size(48px);
+  font-family: Variables.$Inter_font;
 }
 section {
   display: flex;
-  flex-direction: row;
+  @include Mixins.direction(row);
   content: "";
   clear: both;
 }
 header {
   background-color: Variables.$white;
-  width: 63vw;
-  height: 27vw;
-  padding: 3%;
-  margin-left: 2%;
-  text-align: left;
-  font-size: 2.5vw;
-  color: $gray;
+  @include Mixins.Size(63vw,27vw);
+  @include Mixins.padding(3%,3%,3%,3%);
+  @include Mixins.margin(0%,0%,0%,2%);
+  @include Mixins.align;
+  @include Mixins.font_size(2.5vw);
+  color: Variables.$titleColor;
 }
 #yellowSpan{
   color: Variables.$yellow;
 }
 .img {
-  width: 15vw;
-  height: 28vw;
+  @include Mixins.Size(15vw,28vw);
 }
 .imgHeader{
   float: right;
 }
 h6 {
   color: Variables.$textGray;
-  font-size: 1vw;
-  margin-top: 2%;
+  @include Mixins.font_size;
+  @include Mixins.margin(2%,0%,0%,0%);
+  @include Mixins.padding(0%,0%,2%,0%);
 }
 #yellowButton{
-  padding: 1%;
+  @include Mixins.padding(1%,1%,1%,1%);
   border-radius: 10px;
-  font-size: 0.8vw;
+  @include Mixins.font_size(0.8vw);
   display: flex;
   background-color: Variables.$yellow;
   border: 1px solid Variables.$white;
 }
 article {
   display: flex;
-    flex-direction: column;
-    background-color: Variables.$white;
-    width: 50%;
-    height: 100%;
+  @include Mixins.direction;
+  background-color: Variables.$white;
+  @include Mixins.Size(50%,100%);
 }
 #ProfInfo{
-  font-size: 1.4vw;
+  @include Mixins.font_size(1.4vw);
   align-items: center;
-  text-align: center;
+  @include Mixins.align(center);
 }
 .imgProfile{
-  width: 10vw;
-  height: 10vw;
+  @include Mixins.Size(10vw,10vw);
   display: flex;
   justify-content: center;
-  transform: translate(90%, 30%);
+  @include Mixins.translateTrans(90%, 30%);
 }
 .imgAvailable{
-  width: 2vw;
-  height: 2vw;
-  transform: translate(840%, 20%);
+  @include Mixins.Size(2vw,2vw);
+  @include Mixins.translateTrans(840%, 20%);
   display: flex;
 }
 #ItemListofIDs{
   display: list-item;
 }
 .imgIDs{
-  width: 2vw;
-  height: 2vw;
+  @include Mixins.margin(0%,1%,0%,1%);
+  @include Mixins.Size(2vw,2vw);
 }
 .Lines{
-  width: 70%;
+  @include Mixins.Size(70%,0%);
   border-color: Variables.$LineColor;
 }
 .Tables{
-  text-align: start;
-  padding-left: 15%;
-  width: 80%;
-  font-size: 2vw;
+  @include Mixins.align(start);
+  @include Mixins.padding(0%,0%,0%,15%);
+  @include Mixins.Size(80%,0%);
+  @include Mixins.font_size(2vw);
 }
 .thBGcolored{
   background-color: Variables.$yellow;
 }
 .EndAligntd{
-  text-align: end;
+  @include Mixins.align(end);
 }
 tr{
-  font-size: 1.5vw;
-  color: Variables.$gray;
+  @include Mixins.font_size(1.5vw);
+  color: Variables.$titleColor;
 }
 th{
   display: inline;
-  text-align: left;
+  @include Mixins.align;
 }
 td{
-  text-align: left;
+  @include Mixins.align;
 }
 #greenText{
   color: Variables.$textGreen;
 }
 .SndTabletd{
-  padding-left: 40%;
+  @include Mixins.padding(0%,0%,0%,40%);
 }
 .SidebarCaption{
-  text-align: justify;
-  padding-left: 20%;
+  @include Mixins.align(justify);
+  @include Mixins.padding(0%,0%,0%,20%);
 }
 #yellowButtonForSideBar {
-  width: 70%;
-  margin-left: 15%;
-  font-size: 1.5vw;
-  padding-left: 15%;
+  @include Mixins.Size(70%,0%);
+  @include Mixins.font_size(1.5vw);
+  @include Mixins.margin(0%,0%,4%,15%);
+  @include Mixins.padding(0%,0%,0%,15%);
   display: flex;
   background-color: Variables.$yellow;
   border: 1px solid Variables.$white;
   padding-block: 2%;
-  margin-bottom: 4%;
 }
 #Vector{
-  width: 1vw;
-  height: 1vw;
-  padding-left: 10%;
-  margin-top: 2%;
+  @include Mixins.Size;
+  @include Mixins.padding(0%,0%,0%,10%);
+  @include Mixins.margin(2%,0%,0%,0%);
 }
 .ColumnDisplay{
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 3vw;
+  @include Mixins.direction;
+  @include Mixins.align(center);
+  @include Mixins.font_size(3vw);
 }
 .ContentCaptions{
-  margin-top: 3%;
-  font-size: 3vw;
-  text-align: center;
+  @include Mixins.margin(3%,0%,0%,0%);
+  @include Mixins.font_size(3vw);
+  @include Mixins.align(center);
 }
 .Contenttr{
   background-color: Variables.$white;
 }
 .Contenttd{
-  text-align: center;
-  width: 33%;
-  font-size: 2vw;
-  padding-top: 4%;
+  @include Mixins.align(center);
+  @include Mixins.Size(33%,0);
+  @include Mixins.font_size(2vw);
+  @include Mixins.padding(4%,0%,0%,0%);
 }
 .TableSpacing{
   border-spacing: 1vw;
 }
 .imgIcons{
-  width: 5vw;
-  height: 5vw;
+  @include Mixins.Size(5vw,5vw);
 }
 a:link {
   color: Variables.$yellow;
@@ -183,49 +176,48 @@ a:active {
 }
 .rowDisplay{
   display: flex;
-  flex-direction: row;
-  padding-top: 2%;
-  font-size: 1.5vw;
+  @include Mixins.direction(row);
+  @include Mixins.padding(3%,0%,2%,1%);
+  @include Mixins.margin(0%,0%,0%,1%);
+  @include Mixins.font_size(1.5vw);
   background-color: Variables.$white;
-  margin-left: 1%;
   border-bottom: 1px solid Variables.$textGray;
 }
 .FirstSection{
-  width: 60%;
-  text-align: center;
+  @include Mixins.Size(60%,0%);
+  @include Mixins.align(center);
 }
 .leftAlign{
-  margin-left: 10%;
-  text-align: left;
+  @include Mixins.margin(0%,0%,0%,10%);
+  @include Mixins.align;
 }
 .ColoredBox{
-  color: $white;;
+  color: Variables.$white;
   background-color: Variables.$yellow;
 }
 pre{
   font-family: Variables.$Inter_font;
-  font-size: 1vw;
-  margin-top: 5%;
+  @include Mixins.font_size;
+  @include Mixins.margin(5%,0%,0%,0%);
 }
 .ShapeImg{
-  width: 1vw;
-  height: 1vw;
+  @include Mixins.Size(1vw,1vw);
 }
 #Ellipse16{
-  transform: translate(3000%, 200%);
+  @include Mixins.translateTrans(3000%, 200%);
 }
 #Rectangle51{
-  transform: translate(5800%, 200%);
+  @include Mixins.translateTrans(5800%, 200%);
 }
 #SndEllipse16{
-  transform: translate(-300%, 2550%);
+  @include Mixins.translateTrans(-300%, 2550%);
 }
 #Rectangle52{
-  transform: translate(2000%, 2000%);
+  @include Mixins.translateTrans(2000%, 2000%);
 }
 #Ellipse13{
-  transform: translate(3800%, 2400%);
+  @include Mixins.translateTrans(3800%, 2400%);
 }
 #Polygon1{
-  transform: translate(5300%, 2500%);
+  @include Mixins.translateTrans(5300%, 2500%);
 }
