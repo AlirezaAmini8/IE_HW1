@@ -1,13 +1,19 @@
 @use "Variables";
 @use "Mixins";
 
+%display{
+  display: flex;
+}
+%bgYellow{
+  background-color: Variables.$yellow;
+}
 body{
   background-color: Variables.$bgColor;
   @include Mixins.font_size(48px);
   font-family: Variables.$Inter_font;
 }
 section {
-  display: flex;
+  @extend %display;
   @include Mixins.direction(row);
   content: "";
   clear: both;
@@ -40,12 +46,12 @@ h6 {
   @include Mixins.padding(1%,1%,1%,1%);
   border-radius: 10px;
   @include Mixins.font_size(0.8vw);
-  display: flex;
-  background-color: Variables.$yellow;
+  @extend %display;
+  @extend %bgYellow;
   border: 1px solid Variables.$white;
 }
 article {
-  display: flex;
+  @extend %display;
   @include Mixins.direction;
   background-color: Variables.$white;
   @include Mixins.Size(50%,100%);
@@ -57,14 +63,14 @@ article {
 }
 .imgProfile{
   @include Mixins.Size(10vw,10vw);
-  display: flex;
+  @extend %display;
   justify-content: center;
   @include Mixins.translateTrans(90%, 30%);
 }
 .imgAvailable{
   @include Mixins.Size(2vw,2vw);
   @include Mixins.translateTrans(840%, 20%);
-  display: flex;
+  @extend %display;
 }
 #ItemListofIDs{
   display: list-item;
@@ -84,7 +90,7 @@ article {
   @include Mixins.font_size(2vw);
 }
 .thBGcolored{
-  background-color: Variables.$yellow;
+  @extend %bgYellow;
 }
 .EndAligntd{
   @include Mixins.align(end);
@@ -115,8 +121,8 @@ td{
   @include Mixins.font_size(1.5vw);
   @include Mixins.margin(0%,0%,4%,15%);
   @include Mixins.padding(0%,0%,0%,15%);
-  display: flex;
-  background-color: Variables.$yellow;
+  @extend %display;
+  @extend %bgYellow;
   border: 1px solid Variables.$white;
   padding-block: 2%;
 }
@@ -126,7 +132,7 @@ td{
   @include Mixins.margin(2%,0%,0%,0%);
 }
 .ColumnDisplay{
-  display: flex;
+  @extend %display;
   @include Mixins.direction;
   @include Mixins.align(center);
   @include Mixins.font_size(3vw);
@@ -175,7 +181,7 @@ a:active {
   text-decoration: underline;
 }
 .rowDisplay{
-  display: flex;
+  @extend %display;
   @include Mixins.direction(row);
   @include Mixins.padding(3%,0%,2%,1%);
   @include Mixins.margin(0%,0%,0%,1%);
@@ -193,7 +199,7 @@ a:active {
 }
 .ColoredBox{
   color: Variables.$white;
-  background-color: Variables.$yellow;
+  @extend %bgYellow;
 }
 pre{
   font-family: Variables.$Inter_font;
