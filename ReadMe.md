@@ -9,6 +9,12 @@ You can see his/her services with description and images inside Services section
 You can see his/her education with description and time inside education section.
 You can see his/her work resume of him/her with description and time inside work history section.
 
+## Built With
+
+
+* HTML
+* SCSS
+
 # Usage
 
 This site can be used for companies that they want to hire someone,
@@ -22,4 +28,4 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 Gmail: alirezaamini.138115@gmail.com
 
-Project Link: https://github.com/AlirezaAmini8/IE_HW1.git
+Project Link: https://github.com/AlirezaAmini8/AlirezaAmini8
