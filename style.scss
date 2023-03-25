@@ -5,10 +5,10 @@
   display: flex;
 }
 %bgYellow{
-  background-color: Variables.$yellow;
+  @include Mixins.bgColor(Variables.$yellow);
 }
 body{
-  background-color: Variables.$bgColor;
+  @include Mixins.bgColor(Variables.$bgColor);
   @include Mixins.font_size(48px);
   font-family: Variables.$Inter_font;
 }
@@ -19,16 +19,16 @@ section {
   clear: both;
 }
 header {
-  background-color: Variables.$white;
+  @include Mixins.bgColor;
   @include Mixins.Size(63vw,27vw);
   @include Mixins.padding(3%,3%,3%,3%);
   @include Mixins.margin(0%,0%,0%,2%);
   @include Mixins.align;
   @include Mixins.font_size(2.5vw);
-  color: Variables.$titleColor;
+  @include Mixins.Color(Variables.$titleColor);
 }
 #yellowSpan{
-  color: Variables.$yellow;
+  @include Mixins.Color(Variables.$yellow);
 }
 .img {
   @include Mixins.Size(15vw,28vw);
@@ -37,7 +37,7 @@ header {
   float: right;
 }
 h6 {
-  color: Variables.$textGray;
+  @include Mixins.Color(Variables.$textGray);
   @include Mixins.font_size;
   @include Mixins.margin(2%,0%,0%,0%);
   @include Mixins.padding(0%,0%,2%,0%);
@@ -53,7 +53,7 @@ h6 {
 article {
   @extend %display;
   @include Mixins.direction;
-  background-color: Variables.$white;
+  @include Mixins.bgColor;
   @include Mixins.Size(50%,100%);
 }
 #ProfInfo{
@@ -81,7 +81,7 @@ article {
 }
 .Lines{
   @include Mixins.Size(70%,0%);
-  border-color: Variables.$LineColor;
+  @include Mixins.bgColor(Variables.$LineColor);
 }
 .Tables{
   @include Mixins.align(start);
@@ -97,7 +97,7 @@ article {
 }
 tr{
   @include Mixins.font_size(1.5vw);
-  color: Variables.$titleColor;
+  @include Mixins.Color(Variables.$titleColor);
 }
 th{
   display: inline;
@@ -107,7 +107,7 @@ td{
   @include Mixins.align;
 }
 #greenText{
-  color: Variables.$textGreen;
+  @include Mixins.Color(Variables.$textGreen);
 }
 .SndTabletd{
   @include Mixins.padding(0%,0%,0%,40%);
@@ -143,7 +143,7 @@ td{
   @include Mixins.align(center);
 }
 .Contenttr{
-  background-color: Variables.$white;
+  @include Mixins.bgColor;
 }
 .Contenttd{
   @include Mixins.align(center);
@@ -158,27 +158,27 @@ td{
   @include Mixins.Size(5vw,5vw);
 }
 a:link {
-  color: Variables.$yellow;
-  background-color: transparent;
-  text-decoration: none;
+  @include Mixins.Color(Variables.$yellow);
+  @include Mixins.bgColor(transparent);
+  @include Mixins.decoratedText;
 }
 
 a:visited {
-  color: Variables.$purple;
-  background-color: transparent;
-  text-decoration: none;
+  @include Mixins.Color(Variables.$purple);
+  @include Mixins.bgColor(transparent);
+  @include Mixins.decoratedText;
 }
 
 a:hover {
-  color: Variables.$red;
-  background-color: transparent;
-  text-decoration: underline;
+  @include Mixins.Color(Variables.$red);
+  @include Mixins.bgColor(transparent);
+  @include Mixins.decoratedText(underline);
 }
 
 a:active {
-  color: Variables.$textGreen;
-  background-color: transparent;
-  text-decoration: underline;
+  @include Mixins.Color(Variables.$textGreen);
+  @include Mixins.bgColor(transparent);
+  @include Mixins.decoratedText(underline);
 }
 .rowDisplay{
   @extend %display;
@@ -186,7 +186,7 @@ a:active {
   @include Mixins.padding(3%,0%,2%,1%);
   @include Mixins.margin(0%,0%,0%,1%);
   @include Mixins.font_size(1.5vw);
-  background-color: Variables.$white;
+  @include Mixins.bgColor;
   border-bottom: 1px solid Variables.$textGray;
 }
 .FirstSection{
@@ -198,7 +198,7 @@ a:active {
   @include Mixins.align;
 }
 .ColoredBox{
-  color: Variables.$white;
+  @include Mixins.Color(Variables.$white);
   @extend %bgYellow;
 }
 pre{

@@ -1,3 +1,5 @@
+@use "Variables";
+
 @mixin Size($width: 1vw,$height: 1vw){
     width: $width;
     height: $height;
@@ -19,4 +21,13 @@
   }
   @mixin margin($top: 0, $right: 0, $bottom: 0 ,$left: 0){
     margin: $top $right $bottom $left;
+  }
+  @mixin Color($color: Variables.$white){
+    color: $color;
+  }
+  @mixin bgColor($color: Variables.$white){
+    background-color: $color;
+  }
+  @mixin decoratedText($decorate: none){
+    text-decoration: $decorate;
   }
