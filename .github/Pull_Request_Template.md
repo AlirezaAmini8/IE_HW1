@@ -1,25 +1,27 @@
-We accept PR for Bug Fixes and NEW FEATURES.
+# Submit a pull request
 
-## Description
+Thank you for submitting a pull request! To speed up the review process, please ensure that everything below
+is true:
 
-> Describe the purpose of this PR along with any background information and the impacts of the proposed change. For the benefit of the community, please do not assume prior context.
->
-> Provide details that support your chosen implementation, including: breaking changes, alternatives considered, changes to the API, etc.
->
-> If the UI is being changed, please provide screenshots.
+1. This is not a duplicate of an existing pull request.
+2. No existing features have been broken without good reason.
+3. Your commit messages are detailed
+4. Documentation has been updated to reflect your changes.
+5. Tests have been added or updated to reflect your changes.
+6. All tests pass.
 
-- Bugs description:Provide a clear and concise description of the issue, including what you expected to happen.
-- Feature description:Explain the purpose of a feature or scenario that you want to add.
+## Type of change
 
-## Motivation and Context
-> Why is this change required? What problem does it solve? 
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] Refactoring (can be a non or breaking change and not adds functionality)
+- [ ] Upgrades (can be a non or breaking change and not adds functionality)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-> If it fixes an open issue, please link to the issue here. 
+## Pull Request Details
 
-## Reproduction
+Provide details about your pull request and what it adds, fixes, or changes.
 
-> Detail the steps taken to reproduce this error, what was expected, and whether this issue can be reproduced consistently or if it is intermittent.
->
-> - Code sample to reproduce the issue
-> - Screenshots
+## Proposed changes
 
+Ask contributors about why you (or your project maintainers) would accept the pull request. If it solves a previous request, also ask to link to that issue.
