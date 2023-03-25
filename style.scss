@@ -1,13 +1,8 @@
-$bgColor: #e5e5e5;
-$white: #FFFFFF;
-$gray: #2B2B2B;
-$yellow:  #FFB400;
-$textGray: #767676;
-$textGreen: #7EB942;
-$LineColor: #F0F0F6;
+@use "Variables";
+@use "Mixins";
 
 body{
-  background-color: $bgColor;
+  background-color: Variables.$bgColor;
   font-size: 48px;
   font-family: Inter;
 }
@@ -18,7 +13,7 @@ section {
   clear: both;
 }
 header {
-  background-color: $white;
+  background-color: Variables.$white;
   width: 63vw;
   height: 27vw;
   padding: 3%;
@@ -28,7 +23,7 @@ header {
   color: $gray;
 }
 #yellowSpan{
-  color: $yellow;
+  color: Variables.$yellow;
 }
 .img {
   width: 15vw;
@@ -38,7 +33,7 @@ header {
   float: right;
 }
 h6 {
-  color: #767676;
+  color: Variables.$textGray;
   font-size: 1vw;
   margin-top: 2%;
 }
@@ -47,13 +42,13 @@ h6 {
   border-radius: 10px;
   font-size: 0.8vw;
   display: flex;
-  background-color: $yellow;
-  border: 1px solid white;
+  background-color: Variables.$yellow;
+  border: 1px solid Variables.$white;
 }
 article {
   display: flex;
     flex-direction: column;
-    background-color: $white;
+    background-color: Variables.$white;
     width: 50%;
     height: 100%;
 }
@@ -84,7 +79,7 @@ article {
 }
 .Lines{
   width: 70%;
-  border-color: $LineColor;
+  border-color: Variables.$LineColor;
 }
 .Tables{
   text-align: start;
@@ -93,14 +88,14 @@ article {
   font-size: 2vw;
 }
 .thBGcolored{
-  background-color: $yellow;
+  background-color: Variables.$yellow;
 }
 .EndAligntd{
   text-align: end;
 }
 tr{
   font-size: 1.5vw;
-  color: $gray;
+  color: Variables.$gray;
 }
 th{
   display: inline;
@@ -110,7 +105,7 @@ td{
   text-align: left;
 }
 #greenText{
-  color: $textGreen;
+  color: Variables.$textGreen;
 }
 .SndTabletd{
   padding-left: 40%;
@@ -125,8 +120,8 @@ td{
   font-size: 1.5vw;
   padding-left: 15%;
   display: flex;
-  background-color: $yellow;
-  border: 1px solid white;
+  background-color: Variables.$yellow;
+  border: 1px solid Variables.$white;
   padding-block: 2%;
   margin-bottom: 4%;
 }
@@ -148,7 +143,7 @@ td{
   text-align: center;
 }
 .Contenttr{
-  background-color: $white;
+  background-color: Variables.$white;
 }
 .Contenttd{
   text-align: center;
@@ -164,25 +159,25 @@ td{
   height: 5vw;
 }
 a:link {
-  color: $yellow;
+  color: Variables.$yellow;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: purple;
+  color: Variables.$purple;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: Variables.$red;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: $textGreen;
+  color: Variables.$textGreen;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -191,9 +186,9 @@ a:active {
   flex-direction: row;
   padding-top: 2%;
   font-size: 1.5vw;
-  background-color: $white;
+  background-color: Variables.$white;
   margin-left: 1%;
-  border-bottom: 1px solid $textGray;
+  border-bottom: 1px solid Variables.$textGray;
 }
 .FirstSection{
   width: 60%;
@@ -205,10 +200,10 @@ a:active {
 }
 .ColoredBox{
   color: $white;;
-  background-color: $yellow;
+  background-color: Variables.$yellow;
 }
 pre{
-  font-family: Inter;
+  font-family: Variables.$Inter_font;
   font-size: 1vw;
   margin-top: 5%;
 }

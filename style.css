@@ -1,3 +1,11 @@
+.rowDisplay, .ColumnDisplay, #yellowButtonForSideBar, .imgAvailable, .imgProfile, article, #yellowButton, section {
+  display: flex;
+}
+
+.ColoredBox, #yellowButtonForSideBar, .thBGcolored, #yellowButton {
+  background-color: #FFB400;
+}
+
 body {
   background-color: #e5e5e5;
   font-size: 48px;
@@ -5,7 +13,6 @@ body {
 }
 
 section {
-  display: flex;
   flex-direction: row;
   content: "";
   clear: both;
@@ -15,8 +22,8 @@ header {
   background-color: #FFFFFF;
   width: 63vw;
   height: 27vw;
-  padding: 3%;
-  margin-left: 2%;
+  padding: 3% 3% 3% 3%;
+  margin: 0% 0% 0% 2%;
   text-align: left;
   font-size: 2.5vw;
   color: #2B2B2B;
@@ -38,24 +45,23 @@ header {
 h6 {
   color: #767676;
   font-size: 1vw;
-  margin-top: 2%;
+  margin: 2% 0% 0% 0%;
+  padding: 0% 0% 2% 0%;
 }
 
 #yellowButton {
-  padding: 1%;
+  padding: 1% 1% 1% 1%;
   border-radius: 10px;
   font-size: 0.8vw;
-  display: flex;
-  background-color: #FFB400;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
 }
 
 article {
-  display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   width: 50%;
   height: 100%;
+  display: flex;
 }
 
 #ProfInfo {
@@ -67,7 +73,6 @@ article {
 .imgProfile {
   width: 10vw;
   height: 10vw;
-  display: flex;
   justify-content: center;
   transform: translate(90%, 30%);
 }
@@ -76,7 +81,6 @@ article {
   width: 2vw;
   height: 2vw;
   transform: translate(840%, 20%);
-  display: flex;
 }
 
 #ItemListofIDs {
@@ -84,24 +88,23 @@ article {
 }
 
 .imgIDs {
+  margin: 0% 1% 0% 1%;
   width: 2vw;
   height: 2vw;
 }
 
 .Lines {
   width: 70%;
+  height: 0%;
   border-color: #F0F0F6;
 }
 
 .Tables {
   text-align: start;
-  padding-left: 15%;
+  padding: 0% 0% 0% 15%;
   width: 80%;
+  height: 0%;
   font-size: 2vw;
-}
-
-.thBGcolored {
-  background-color: #FFB400;
 }
 
 .EndAligntd {
@@ -127,42 +130,39 @@ td {
 }
 
 .SndTabletd {
-  padding-left: 40%;
+  padding: 0% 0% 0% 40%;
 }
 
 .SidebarCaption {
   text-align: justify;
-  padding-left: 20%;
+  padding: 0% 0% 0% 20%;
 }
 
 #yellowButtonForSideBar {
   width: 70%;
-  margin-left: 15%;
+  height: 0%;
   font-size: 1.5vw;
-  padding-left: 15%;
-  display: flex;
-  background-color: #FFB400;
-  border: 1px solid white;
+  margin: 0% 0% 4% 15%;
+  padding: 0% 0% 0% 15%;
+  border: 1px solid #FFFFFF;
   padding-block: 2%;
-  margin-bottom: 4%;
 }
 
 #Vector {
   width: 1vw;
   height: 1vw;
-  padding-left: 10%;
-  margin-top: 2%;
+  padding: 0% 0% 0% 10%;
+  margin: 2% 0% 0% 0%;
 }
 
 .ColumnDisplay {
-  display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 3vw;
 }
 
 .ContentCaptions {
-  margin-top: 3%;
+  margin: 3% 0% 0% 0%;
   font-size: 3vw;
   text-align: center;
 }
@@ -174,8 +174,9 @@ td {
 .Contenttd {
   text-align: center;
   width: 33%;
+  height: 0;
   font-size: 2vw;
-  padding-top: 4%;
+  padding: 4% 0% 0% 0%;
 }
 
 .TableSpacing {
@@ -212,34 +213,33 @@ a:active {
 }
 
 .rowDisplay {
-  display: flex;
   flex-direction: row;
-  padding-top: 2%;
+  padding: 3% 0% 2% 1%;
+  margin: 0% 0% 0% 1%;
   font-size: 1.5vw;
   background-color: #FFFFFF;
-  margin-left: 1%;
   border-bottom: 1px solid #767676;
 }
 
 .FirstSection {
   width: 60%;
+  height: 0%;
   text-align: center;
 }
 
 .leftAlign {
-  margin-left: 10%;
+  margin: 0% 0% 0% 10%;
   text-align: left;
 }
 
 .ColoredBox {
   color: #FFFFFF;
-  background-color: #FFB400;
 }
 
 pre {
   font-family: Inter;
   font-size: 1vw;
-  margin-top: 5%;
+  margin: 5% 0% 0% 0%;
 }
 
 .ShapeImg {
